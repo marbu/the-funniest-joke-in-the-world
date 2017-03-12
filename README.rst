@@ -9,6 +9,12 @@ This is `LaTeX`_ document with `The Funniest Joke in the World`_ typeseted in
 Why? Well, just for fun :)
 
 
+How to build the pdf?
+=====================
+
+When you have all requirements (listed below) installed, just run ``make``.
+
+
 Requirements
 ============
 
@@ -31,12 +37,6 @@ given tex file, which is usefull when latex build fails on some missing file::
 
     # dnf install 'tex(german.ldf)'
     # dnf install 'tex(yfrak.pfb)'
-
-
-How to build the pdf?
-=====================
-
-When you have all requirements listed above installed, just run ``make``.
 
 
 .. _`LaTeX`: https://en.wikipedia.org/wiki/LaTeX
