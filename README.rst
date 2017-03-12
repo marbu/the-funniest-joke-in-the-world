@@ -39,6 +39,13 @@ given tex file, which is usefull when latex build fails on some missing file::
     # dnf install 'tex(yfrak.pfb)'
 
 
+Known Issues
+============
+
+Export to svg (as scripted in the makefile) doesn't work for the initial
+letter, which is pixelized.
+
+
 .. _`LaTeX`: https://en.wikipedia.org/wiki/LaTeX
 .. _`The Funniest Joke in the World`: https://en.wikipedia.org/wiki/The_Funniest_Joke_in_the_World
 .. _`fraktur`: https://en.wikipedia.org/wiki/Fraktur
