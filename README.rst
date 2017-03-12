@@ -18,6 +18,7 @@ You need to have the following `ctan`_ packages installed to build the pdf:
 * gothic
 * yfonts-t1
 * blacklettert1
+* lettrine
 
 On Fedora, which provides texlive distribution packaged in it's repositories,
 you can prefix the name of a ctan package with ``texlive-`` to install rpm

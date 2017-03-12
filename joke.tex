@@ -8,6 +8,15 @@
 % make sure the pdf output has the expected size
 \usepackage[pass]{geometry}
 
+% use lettrine package for typesetting initials
+\usepackage{lettrine}
+% see http://tex.stackexchange.com/questions/229590/problem-using-yfonts-gothic#230264
+\setcounter{DefaultLines}{2}
+\setlength{\DefaultFindent}{0.5em}
+\setlength{\DefaultNindent}{0em}
+\renewcommand{\LettrineFontHook}{\usefont{U}{yinit}{m}{n}}
+\renewcommand{\DefaultLoversize}{-0.65}
+
 % turn off page numbering
 \pagenumbering{gobble}
 
@@ -18,7 +27,7 @@
 
 \huge
 
-Wenn ist das Nunstück git und Slotermeyer? Ja! Beiherhund das Oder die
-Flipperwaldt gersput!
+\lettrine{W}{enn} ist das Nunstück git und Slotermeyer? Ja! Beiherhund das Oder
+die Flipperwaldt gersput!
 
 \end{document}
