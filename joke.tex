@@ -10,12 +10,12 @@
 
 % use lettrine package for typesetting initials
 \usepackage{lettrine}
+
+% when letterine image=True is set
+% \usepackage{graphicx}
+
 % see http://tex.stackexchange.com/questions/229590/problem-using-yfonts-gothic#230264
-\setcounter{DefaultLines}{2}
-\setlength{\DefaultFindent}{0.5em}
-\setlength{\DefaultNindent}{0em}
 \renewcommand{\LettrineFontHook}{\usefont{U}{yinit}{m}{n}}
-\renewcommand{\DefaultLoversize}{-0.65}
 
 % turn off page numbering
 \pagenumbering{gobble}
@@ -27,7 +27,13 @@
 
 \huge
 
-\lettrine{W}{enn} ist das Nunstück git und Slotermeyer? Ja! Beiherhund das Oder
+\lettrine
+[ lines=2,
+  depth=0,
+  loversize=-0.6,
+  findent=0.2em,
+  nindent=0em,
+]{W}{enn} ist das Nunstück git und Slotermeyer? Ja! Beiherhund das Oder
 die Flipperwaldt gersput!
 
 \end{document}
