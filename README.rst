@@ -20,7 +20,8 @@ instead.
 Requirements
 ============
 
-You need to have the following `ctan`_ packages installed to build the pdf:
+Besides having ``pdflatex`` from `Tex Live`_ installed on your Linux distro,
+you need to have the following `ctan`_ packages installed to build the pdf:
 
 * babel-german
 * gothic
@@ -31,9 +32,12 @@ You need to have the following `ctan`_ packages installed to build the pdf:
 For svg export to work, you need to have ``dvisvgm`` tool (and ``latex``,
 obviously) installed .
 
-On Fedora, which provides texlive distribution packaged in it's repositories,
-you can prefix the name of a ctan package with ``texlive-`` to install rpm
-package::
+Installing requirements on Fedora
+`````````````````````````````````
+
+On Fedora, which provides `Tex Live`_ distribution packaged in it's
+repositories, you can prefix the name of a ctan package with ``texlive-`` to
+install the rpm package::
 
     # dnf install textlive-babel-german
 
@@ -44,6 +48,7 @@ given tex file, which is usefull when latex build fails on some missing file::
     # dnf install 'tex(yfrak.pfb)'
 
 .. _`LaTeX`: https://en.wikipedia.org/wiki/LaTeX
+.. _`Tex Live`: https://en.wikipedia.org/wiki/TeX_Live
 .. _`The Funniest Joke in the World`: https://en.wikipedia.org/wiki/The_Funniest_Joke_in_the_World
 .. _`fraktur`: https://en.wikipedia.org/wiki/Fraktur
 .. _`blacklettert1`: http://ctan.org/pkg/blacklettert1
