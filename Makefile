@@ -5,8 +5,11 @@ all: joke.pdf
 joke.pdf: joke.tex
 	pdflatex $? -o $@
 
-joke.svg: joke.pdf
-	pdf2svg $? $@
+joke.dvi: joke.tex
+	latex $? -o $@
+
+joke.svg: joke.dvi
+	dvisvgm -n $? -o $@
 
 clean:
-	rm -f joke.pdf joke.svg *.aux *.log
+	rm -f joke.pdf joke.dvi joke.svg *.aux *.log

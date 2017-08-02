@@ -12,7 +12,9 @@ Why? Well, just for fun :)
 How to build the pdf?
 =====================
 
-When you have all requirements (listed below) installed, just run ``make``.
+When you have all the requirements (as listed below) installed, just run
+``make`` to generate pdf file or ``make joke.svg`` for producing svg output
+instead.
 
 
 Requirements
@@ -26,6 +28,9 @@ You need to have the following `ctan`_ packages installed to build the pdf:
 * blacklettert1
 * lettrine
 
+For svg export to work, you need to have ``dvisvgm`` tool (and ``latex``,
+obviously) installed .
+
 On Fedora, which provides texlive distribution packaged in it's repositories,
 you can prefix the name of a ctan package with ``texlive-`` to install rpm
 package::
@@ -37,14 +42,6 @@ given tex file, which is usefull when latex build fails on some missing file::
 
     # dnf install 'tex(german.ldf)'
     # dnf install 'tex(yfrak.pfb)'
-
-
-Known Issues
-============
-
-Export to svg (as scripted in the makefile) doesn't work for the initial
-letter, which is pixelized.
-
 
 .. _`LaTeX`: https://en.wikipedia.org/wiki/LaTeX
 .. _`The Funniest Joke in the World`: https://en.wikipedia.org/wiki/The_Funniest_Joke_in_the_World
